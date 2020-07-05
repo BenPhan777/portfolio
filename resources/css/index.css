@@ -1,0 +1,44 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url('/Users/benphan/Downloads/camila-akzo-nMf9L8B-CeY-unsplash.jpg');
+    background-size: cover;
+}
+
+header {
+    height: 100%;
+}
+
+.clouds {
+    position: relative;
+    height: 0px;
+  }
+  
+  .firstCloud {
+    position: absolute;
+    left: -150px;
+    top: 600px;
+    animation: move 10s linear 2s infinite;
+    width: 150px;
+  }
+  
+  .secondCloud {
+    position: absolute;
+    left: -150px;
+    top: 200px;
+    animation: move 15s linear 0s infinite;
+    width: 150px;
+    }
+  
+  .thirdCloud {
+    top: 250px;
+    left: -150px;
+    position: absolute;
+    animation: move 20s linear 5s infinite;
+    width: 150px;
+  }
+  
+  @keyframes move {
+    from {left: -150px;}
+    to {left: 100%;}
+  }
