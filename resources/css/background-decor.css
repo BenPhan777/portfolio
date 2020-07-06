@@ -1,4 +1,5 @@
-.clouds {
+/* Introduction section decors */
+.clouds {                    /* Cloud decors */
     position: fixed;
     height: 0rem;
     z-index: 0;
@@ -9,40 +10,78 @@
     height: auto;
 }
 
-.firstCloud img{
+#firstCloud, #fifthCloud{
     width: 15rem;
 }
   
-.firstCloud {
+#firstCloud {
     position: absolute;
     left: -60rem;
     top: -1rem;
-    animation: move 40s linear infinite;
+    animation: move 20s linear 5s infinite;
 }
 
-.secondCloud {
+#secondCloud {
+    position: absolute;
+    left: -60rem;
+    top: -1rem;
+    animation: move 20s linear 35s infinite;
+}
+
+#thirdCloud {
     position: absolute;
     left: -60rem;
     top: 8rem;
-    animation: move 55s linear 9s infinite;
+    animation: move 20s linear 19s infinite;
 }
 
-.thirdCloud {
+#fourthCloud {
     position: absolute;
     left: -60rem;
     top: 30rem;
-    animation: move 43s linear 5s infinite;
+    animation: move 20s linear 10s infinite;
 }
 
-.fourthCloud {
+#fifthCloud {
+    position: absolute;
+    left: -60rem;
+    top: 33rem;
+    animation: move 20s linear 17s infinite;
+}
+
+#sixthCloud {
     position: absolute;
     left: -60rem;
     top: 40rem;
-    animation: move 30s linear infinite;
+    animation: move 20s linear infinite;
 }
 
 @keyframes move {
     100% {
         left: 50vw;
+    }
+}
+
+.introduction img {      /* Blue chalk decor */
+    position: absolute;
+    height: 2rem;
+    width: auto;
+    left: 30rem;
+    animation: write-title 4s linear infinite;
+}
+
+#job-title {
+    animation: change-to-blue 4s linear infinite;
+}
+
+@keyframes write-title {
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes change-to-blue {
+    50% {
+        color: rgb(98, 190, 221);
     }
 }
