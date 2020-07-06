@@ -17,7 +17,32 @@ body {
 header {
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    content: "";
+    margin-right: 1rem;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Cabin Sketch', cursive;
+    color: white;
 }
 
 .introduction {
