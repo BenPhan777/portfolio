@@ -1,0 +1,48 @@
+.clouds {
+    position: fixed;
+    height: 0rem;
+    z-index: 0;
+  }
+
+.clouds img {
+    width: 11rem;
+    height: auto;
+}
+
+.firstCloud img{
+    width: 15rem;
+}
+  
+.firstCloud {
+    position: absolute;
+    left: -60rem;
+    top: -1rem;
+    animation: move 40s linear infinite;
+}
+
+.secondCloud {
+    position: absolute;
+    left: -60rem;
+    top: 8rem;
+    animation: move 55s linear 9s infinite;
+}
+
+.thirdCloud {
+    position: absolute;
+    left: -60rem;
+    top: 30rem;
+    animation: move 43s linear 5s infinite;
+}
+
+.fourthCloud {
+    position: absolute;
+    left: -60rem;
+    top: 40rem;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move {
+    100% {
+        left: 50vw;
+    }
+}

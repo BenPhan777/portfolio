@@ -1,7 +1,7 @@
 html {
     font-family: 'Cabin Sketch', cursive;
     color: white;
-    background-image: url('/Users/benphan/Downloads/camila-akzo-nMf9L8B-CeY-unsplash.jpg');
+    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594046553/Portfolio/main-background_aldqzi.jpg');
     background-size: 100% auto;
 }
 
@@ -25,28 +25,3 @@ header {
     width: 40rem;
     z-index: 10;
 }
-
-.clouds {
-    position: fixed;
-    height: 0rem;
-    z-index: 0;
-  }
-
-.clouds img {
-    width: 10rem;
-    height: auto;
-}
-  
-.firstCloud {
-    position: absolute;
-    left: -60rem;
-    top: 100px;
-    animation: move 20s linear infinite;
-    width: 100px;
-}
-  
-  @keyframes move {
-    100% {
-        left: 50vw;
-    }
-  }
