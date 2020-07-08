@@ -3,7 +3,7 @@ html {
     color: white;
     text-align: center;
     background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594046553/Portfolio/main-background_aldqzi.jpg');
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 body {
@@ -62,4 +62,5 @@ nav a {
 #job-title {
     font-size: 3rem;
     z-index: 2;
+    color: orange;
 }

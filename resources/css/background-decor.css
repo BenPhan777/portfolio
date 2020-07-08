@@ -1,87 +1,25 @@
 /* Introduction section decors */
-.clouds {                    /* Cloud decors */
-    position: fixed;
-    height: 0rem;
-    z-index: 0;
-  }
-
-.clouds img {
-    width: 11rem;
-    height: auto;
-}
-
-#firstCloud, #fifthCloud{
-    width: 15rem;
-}
-  
-#firstCloud {
+#top-windmill {      /* windmill decor */
     position: absolute;
-    left: -60rem;
-    top: -1rem;
-    animation: move 20s linear 5s infinite;
+    left: 32rem;
+    top: -7.75rem;
+    animation: spin 4s linear infinite;
 }
 
-#secondCloud {
-    position: absolute;
-    left: -60rem;
-    top: -1rem;
-    animation: move 20s linear 35s infinite;
-}
-
-#thirdCloud {
-    position: absolute;
-    left: -60rem;
-    top: 8rem;
-    animation: move 20s linear 19s infinite;
-}
-
-#fourthCloud {
-    position: absolute;
-    left: -60rem;
-    top: 30rem;
-    animation: move 20s linear 10s infinite;
-}
-
-#fifthCloud {
-    position: absolute;
-    left: -60rem;
-    top: 33rem;
-    animation: move 20s linear 17s infinite;
-}
-
-#sixthCloud {
-    position: absolute;
-    left: -60rem;
-    top: 40rem;
-    animation: move 20s linear infinite;
-}
-
-@keyframes move {
-    100% {
-        left: 50vw;
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 
-.introduction img {      /* Blue chalk decor */
+#bottom-windmill {
     position: absolute;
-    height: 2rem;
+    height: 12rem;
     width: auto;
-    left: 30rem;
-    animation: write-title 4s linear infinite;
-}
-
-#job-title {
-    animation: change-to-blue 4s linear infinite;
-}
-
-@keyframes write-title {
-    50% {
-        transform: rotate(-45deg);
-    }
-}
-
-@keyframes change-to-blue {
-    50% {
-        color: rgb(98, 190, 221);
-    }
+    transform: rotate(45deg);
+    right: -1rem;
+    top: -6.5rem;
 }
