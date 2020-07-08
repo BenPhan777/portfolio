@@ -29,14 +29,11 @@ nav ul {
 
 nav li {
     content: "";
+    font-size: 1.5rem;
     margin-right: 1rem;
     border: 0.1rem solid white;
     border-radius: 0.5rem;
     padding: 0.2rem;
-}
-
-nav li:hover {
-    transform: scale(1.1);
 }
 
 nav a {
@@ -49,18 +46,33 @@ nav a {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    line-height: 4rem;
+    line-height: 5rem;
     border: 0.2rem double white;
     z-index: 1;
 }
 
 .introduction h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #job-title {
-    font-size: 3rem;
+    font-size: 4rem;
     z-index: 2;
     color: orange;
+}
+
+.linkedin_github {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.linkedin_github img {
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+nav li:hover, .linkedin_github img:hover {
+    transform: scale(1.1);
 }

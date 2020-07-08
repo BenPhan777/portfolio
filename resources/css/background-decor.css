@@ -1,9 +1,14 @@
 /* Introduction section decors */
 #top-windmill {      /* windmill decor */
+    content: "";
     position: absolute;
-    left: 32rem;
+    left: 41rem;
     top: -7.75rem;
-    animation: spin 4s linear infinite;
+    animation: spin 4s ease-in-out;
+}
+
+#top-windmill:hover {
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
@@ -21,5 +26,5 @@
     width: auto;
     transform: rotate(45deg);
     right: -1rem;
-    top: -6.5rem;
+    top: -6.65rem;
 }
