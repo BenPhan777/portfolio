@@ -2,8 +2,6 @@ html {
     font-family: 'Cabin Sketch', cursive;
     color: white;
     text-align: center;
-    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594046553/Portfolio/main-background_aldqzi.jpg');
-    background-size: cover;
 }
 
 body {
@@ -16,9 +14,13 @@ body {
 /* header starts here */
 header {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594241834/Portfolio/header_background_c8xeig.jpg');
+    background-size: cover;
 }
 
 nav ul {
@@ -76,3 +78,41 @@ nav a {
 nav li:hover, .linkedin_github img:hover {
     transform: scale(1.1);
 }
+
+/* main starts here */
+main {
+    position: relative;
+    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594241836/Portfolio/main_background_s7oc3v.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    height: 100rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    line-height: 2rem;
+    text-align: left;
+}
+
+.about {
+    width: 50%;
+}
+
+#my_photo {
+    height: 22rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: auto;
+    float: right;
+}
+
+

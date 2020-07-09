@@ -1,5 +1,6 @@
 /* Introduction section decors */
-#top-windmill {      /* windmill decor */
+/* windmill decor */
+#top-windmill {      
     content: "";
     position: absolute;
     left: 41rem;
@@ -27,4 +28,41 @@
     transform: rotate(45deg);
     right: -1rem;
     top: -6.65rem;
+}
+
+ /* favourite things decor */
+#ukulele {
+    position: absolute;
+    transform: rotate(-20deg);
+    left: 5rem;
+    top: 5rem;
+}
+
+#harry_potter {
+    position: absolute;
+    left: 5rem;
+    top: 25rem;
+}
+
+#pineapple {
+    position: absolute;
+    transform: rotate(-20deg);
+    right: 9rem;
+    top: 5rem;
+}
+
+#laptop {
+    position: absolute;
+    right: 3rem;
+    top: 26rem;
+}
+
+.about_decor img:hover {
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+    50% {
+        transform: rotate(25deg);
+    }
 }
