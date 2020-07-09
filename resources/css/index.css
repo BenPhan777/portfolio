@@ -2,6 +2,7 @@ html {
     font-family: 'Cabin Sketch', cursive;
     color: white;
     text-align: center;
+    width: 100vw;
 }
 
 body {
@@ -127,7 +128,7 @@ hr {
     border-top: 0.1rem solid black;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-device-width: 750px) {
     #my_photo {
         width: 100%;
         height: auto;
