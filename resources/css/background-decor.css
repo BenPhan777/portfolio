@@ -3,7 +3,7 @@
 #top-windmill {      
     content: "";
     position: absolute;
-    left: 41rem;
+    left: 35rem;
     top: -7.75rem;
     animation: spin 4s ease-in-out;
 }
