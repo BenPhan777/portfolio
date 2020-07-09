@@ -78,4 +78,8 @@
     #ukulele, #laptop, #harry_potter, #pineapple {
         display: none;
     }
+
+    hr {
+        width: 100vw;
+    }
 }  

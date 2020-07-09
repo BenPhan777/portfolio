@@ -80,9 +80,43 @@ nav li:hover, .linkedin_github img:hover {
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-device-width: 950px) {
     #top-windmill, #bottom-windmill {
         display: none;
+    }
+}
+
+@media only screen and (max-device-width: 570px) {
+    .introduction {
+        line-height: 2rem;
+        border: 0.1rem solid white;
+    }
+
+    .introduction h1 {
+        font-size: 1rem;
+    }
+    
+    #job-title {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav li {
+        font-size: 1rem;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    .linkedin_github {
+        justify-content: center;
+    }
+
+    .linkedin_github img {
+        width: 2rem;
+        height: auto;
     }
 }
 
@@ -122,10 +156,9 @@ p {
 }
 
 hr {
-    position: relative;
-    left: -30vw;
-    width: 100vw;
+    width: 90vw;
     border-top: 0.1rem solid black;
+    margin-left: 0;
 }
 
 @media only screen and (max-device-width: 750px) {
