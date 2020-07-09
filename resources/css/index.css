@@ -64,20 +64,6 @@ nav a {
     color: orange;
 }
 
-/* @media only screen and (max-width: 800px) {
-    .introduction {
-        flex-shrink: 1;
-    }
-
-    .introduction h1 {
-        font-size: 1rem;
-    }
-    
-    #job-title {
-        font-size: 2rem;
-    }
-} */
-
 .linkedin_github {
     display: flex;
     justify-content: flex-end;
@@ -91,6 +77,12 @@ nav a {
 
 nav li:hover, .linkedin_github img:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 950px) {
+    #top-windmill, #bottom-windmill {
+        display: none;
+    }
 }
 
 /* main starts here */
@@ -128,5 +120,16 @@ p {
     width: auto;
     float: right;
 }
+
+@media only screen and (max-width: 750px) {
+    #my_photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        width: 85%;
+    }
+}  
 
 
