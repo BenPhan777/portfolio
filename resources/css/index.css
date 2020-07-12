@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-/* header starts here */
+/*************** header starts here ***************/
 header {
     height: 100vh;
     width: 100vw;
@@ -71,22 +71,24 @@ nav a {
     margin-top: 1rem;
 }
 
-.linkedin_github img {
-    border-radius: 2rem;
-    margin-left: 1rem;
+.linkedin_github i {
+    color: white;
+    font-size: 3.5rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
 }
 
-nav li:hover, .linkedin_github img:hover {
+nav li:hover, .linkedin_github i:hover {
     transform: scale(1.1);
 }
 
-@media only screen and (max-device-width: 950px) {
+@media only screen and (max-width: 950px) {
     #top-windmill, #bottom-windmill {
         display: none;
     }
 }
 
-@media only screen and (max-device-width: 570px) {
+@media only screen and (max-width: 570px) {
     .introduction {
         line-height: 2rem;
         border: 0.1rem solid white;
@@ -106,7 +108,7 @@ nav li:hover, .linkedin_github img:hover {
 
     nav li {
         font-size: 1rem;
-        margin-right: 0;
+        margin: 0 0.25rem;
         border-radius: 0;
     }
 
@@ -114,13 +116,12 @@ nav li:hover, .linkedin_github img:hover {
         justify-content: center;
     }
 
-    .linkedin_github img {
-        width: 2rem;
-        height: auto;
+    .linkedin_github i {
+        font-size: 2.75rem;
     }
 }
 
-/* main starts here */
+/*************** main starts here ***************/
 main {
     position: relative;
     background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594241836/Portfolio/main_background_s7oc3v.jpg');
@@ -129,22 +130,23 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 100rem;
+    height: 150rem;
     color: black;
     font-size: 1.5rem;
 }
 
-h2 {
+/* about section starts here */
+#about {
+    width: 50%;
+}
+
+h2 {      
     font-size: 3rem;
 }
 
-p {
+#about p {
     line-height: 2rem;
     text-align: left;
-}
-
-.about {
-    width: 50%;
 }
 
 #my_photo {
@@ -161,15 +163,86 @@ hr {
     margin-left: 0;
 }
 
-@media only screen and (max-device-width: 750px) {
+@media only screen and (max-width: 750px) {
     #my_photo {
         width: 100%;
         height: auto;
     }
 
-    .about {
+    #about {
         width: 85%;
     }
+
+    #about p {
+        text-align: center;
+    }
 }  
+
+/* technology section starts here */
+.logos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 32rem;
+    width: 35vw;
+}
+
+#technology a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+#technology a:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+#technology p {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+#java_logo {
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.js_logo {
+    position: relative;
+    top: 0.3rem;
+}
+
+.html, .css, .js, .python, .java, .git{
+    height: 5.25rem;
+    width: auto;
+    filter: brightness(0%);
+}
+
+.python, .java {
+    position: relative;
+    top: 0.4rem;
+    height: 6rem;
+    width: auto;
+}
+
+#technology a:hover > .html, #technology a:hover > .css,
+#technology a:hover > .js, #technology a:hover > .python,
+#technology a:hover > .java, #technology a:hover > .git {
+    filter: none;
+}
+
+@media only screen and (max-width: 960px) {
+    .logos {
+        align-content: center;
+        width: 100vw;
+    }
+    
+    .logos a {
+        margin: 0 1.5rem;
+    }
+} 
 
 

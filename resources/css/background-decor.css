@@ -31,7 +31,7 @@
     top: -6.65rem;
 }
 
-@media only screen and (max-device-width: 950px) {
+@media only screen and (max-width: 950px) {
     #top-windmill, #bottom-windmill {
         display: none;
     }
@@ -74,7 +74,7 @@
     }
 }
 
-@media only screen and (max-device-width: 975px) {
+@media only screen and (max-width: 975px) {
     #ukulele, #laptop, #harry_potter, #pineapple {
         display: none;
     }
