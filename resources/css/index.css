@@ -258,6 +258,12 @@ hr {
     box-shadow: 0.4375rem 0.8125rem 0.8125rem -0.25rem rgba(0,0,0,0.56), 0.875rem 1.125rem 2.375rem -0.125rem rgba(0,0,0,0.5);
 }
 
+#project div img {
+    display: none;
+    width: 100%;
+    margin: 0;
+}
+
 #project video {
     width: 95%;
     margin-top: 3%;
@@ -268,7 +274,7 @@ hr {
     filter: grayscale(80%) brightness(60%);
 }
 
-#project img {
+#project .duct_tape {
     position: absolute;
     left: 40%;
     top: -11%;
@@ -297,6 +303,16 @@ h3 {
     line-height: 1.75rem;
 }
 
+@media only screen and (max-width: 425px) {
+    #project div img {
+        display: initial;
+    }
+
+    #project video {
+        display: none;
+    }
+} 
+
 @media only screen and (max-width: 800px) {
     #project div {
         width: 80vw;
@@ -304,7 +320,7 @@ h3 {
         height: auto;
     }
 
-    #project img {
+    #project .duct_tape {
         display: none;
     }
     
