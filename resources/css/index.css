@@ -71,14 +71,14 @@ nav a {
     margin-top: 1rem;
 }
 
-.linkedin_github i {
-    color: white;
-    font-size: 3.5rem;
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
+.linkedin_github img {
+    filter: brightness(0%) invert(1);
+    height: 3.5rem;
+    width: auto;
+    margin-left: 1.5rem;
 }
 
-nav li:hover, .linkedin_github i:hover {
+nav li:hover, .linkedin_github img:hover {
     transform: scale(1.1);
 }
 
@@ -116,8 +116,9 @@ nav li:hover, .linkedin_github i:hover {
         justify-content: center;
     }
 
-    .linkedin_github i {
-        font-size: 2.75rem;
+    .linkedin_github img {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
     }
 }
 
@@ -158,9 +159,8 @@ h2 {
 }
 
 hr {
-    width: 90vw;
+    width: 100vw;
     border-top: 0.1rem solid black;
-    margin-left: 0;
 }
 
 @media only screen and (max-width: 750px) {
@@ -205,7 +205,7 @@ hr {
     font-size: 2rem;
 }
 
-#java_logo {
+.java_logo {
     position: relative;
     bottom: 0.5rem;
 }
@@ -244,5 +244,36 @@ hr {
         margin: 0 1.5rem;
     }
 } 
+
+/* project section starts here */
+#project div {
+    position: relative;
+    background-color: rgb(255, 255, 136);
+    width: 40vw;
+    height: auto;
+    box-shadow: 5px 11px 15px -3px rgba(0,0,0,0.75);
+}
+
+video {
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+#project .left {
+    position: absolute;
+    right: -4rem;
+    top: -4rem;
+    height: 30%;
+    width: auto;
+}
+
+#project .right {
+    position: absolute;
+    left: -4rem;
+    top: -4rem;
+    height: 30%;
+    width: auto;
+}
 
 
