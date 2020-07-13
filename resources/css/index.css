@@ -248,7 +248,7 @@ hr {
 /* project section starts here */
 #project div {
     position: relative;
-    background-color: rgb(255, 255, 136);
+    backdrop-filter: brightness(70%);
     width: 40vw;
     height: auto;
     box-shadow: 5px 11px 15px -3px rgba(0,0,0,0.75);
@@ -260,20 +260,14 @@ video {
     margin-top: 2rem;
 }
 
-#project .left {
+#project .duct_tape {
     position: absolute;
-    right: -4rem;
-    top: -4rem;
+    left: 40%;
+    top: -5rem;
     height: 30%;
     width: auto;
-}
-
-#project .right {
-    position: absolute;
-    left: -4rem;
-    top: -4rem;
-    height: 30%;
-    width: auto;
+    transform: rotate(47deg);
+    filter: grayscale(60%) brightness(60%) saturate(10%);
 }
 
 
