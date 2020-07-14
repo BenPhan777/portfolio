@@ -304,7 +304,7 @@ h3 {
 }
 
 @media only screen and (max-width: 425px) {
-    #project div img {
+    #project .thumbnail {
         display: initial;
     }
 
