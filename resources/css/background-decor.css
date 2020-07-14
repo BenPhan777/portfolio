@@ -3,14 +3,16 @@
 #top-windmill {      
     content: "";
     position: absolute;
-
+    display: -webkit-box;
     left: 35rem;
     top: -7.75rem;
     animation: spin 4s ease-in-out;
+    -webkit-animation: spin 4s ease-in-out;
 }
 
 #top-windmill:hover {
     animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
