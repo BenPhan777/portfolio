@@ -250,7 +250,7 @@ hr {
 /* project section starts here */
 #project div {
     position: relative;
-    display: inline-block;
+    margin-bottom: 10rem;
     backdrop-filter: brightness(70%);
     width: 800px;
     min-width: 100%;
@@ -258,7 +258,7 @@ hr {
     box-shadow: 0.4375rem 0.8125rem 0.8125rem -0.25rem rgba(0,0,0,0.56), 0.875rem 1.125rem 2.375rem -0.125rem rgba(0,0,0,0.5);
 }
 
-#project div img {
+#project .thumbnail {
     display: none;
     width: 100%;
     margin: 0;
