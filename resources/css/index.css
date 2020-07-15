@@ -20,7 +20,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594241834/Portfolio/header_background_c8xeig.jpg');
+    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594832278/Portfolio/header_background_isdj0u.jpg');
     background-size: cover;
 }
 
@@ -125,13 +125,13 @@ nav li:hover, .linkedin_github img:hover {
 /*************** main starts here ***************/
 main {
     position: relative;
-    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594241836/Portfolio/main_background_s7oc3v.jpg');
+    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594832064/Portfolio/main_background_uut6ag.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 300rem;
+    height: auto;
     color: black;
     font-size: 1.5rem;
 }
@@ -321,17 +321,11 @@ h3 {
     #project video {
         display: none;
     }
-} 
-/* 
-@media only screen and (max-width: 2000px) {
-    #project .thumbnail {
-        display: initial;
-    }
 
-    #project video {
-        display: none;
+    #project .project_container {
+        margin-bottom: 4rem;
     }
-}  */
+} 
 
 @media only screen and (max-width: 800px) {
     #project .project_container {
@@ -350,3 +344,28 @@ h3 {
         margin: 0;
     }
 } 
+
+/*************** footer starts here ***************/
+footer {
+    background-image: url('https://res.cloudinary.com/doaazgsrk/image/upload/v1594832278/Portfolio/header_background_isdj0u.jpg');
+    background-size: cover;
+    height: 40rem;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 25vw 55vw;
+    grid-template-rows: 7rem 7rem 15rem;
+    grid-template-areas: "contact name"
+                         "contact email"
+                         "contact message";
+    justify-content: center;
+    align-content: center;
+    height: 40rem;
+    width: 100vw;
+}
+
+.contact_guide {
+    grid-area: contact;
+    border: 0.2rem double white;
+}
