@@ -248,7 +248,7 @@ hr {
 } 
 
 /* project section starts here */
-#project div {
+#project .project_container {
     position: relative;
     margin-bottom: 10rem;
     backdrop-filter: brightness(70%);
@@ -284,10 +284,16 @@ hr {
     filter: grayscale(60%) brightness(60%) saturate(10%);
 }
 
+#project .project_info {
+    height: 266.5px;
+    overflow: scroll;
+}
+
 h3 {
     font-size: 2.5rem;
     text-align: left;
     margin: 0.5rem 1rem;
+    margin-bottom: 0.3rem;
 }
 
 #project p {
@@ -303,6 +309,10 @@ h3 {
     line-height: 1.75rem;
 }
 
+#project i {
+    font-size: 1.7rem;
+}
+
 @media only screen and (max-width: 425px) {
     #project .thumbnail {
         display: initial;
@@ -312,9 +322,19 @@ h3 {
         display: none;
     }
 } 
+/* 
+@media only screen and (max-width: 2000px) {
+    #project .thumbnail {
+        display: initial;
+    }
+
+    #project video {
+        display: none;
+    }
+}  */
 
 @media only screen and (max-width: 800px) {
-    #project div {
+    #project .project_container {
         width: 80vw;
         min-width: 100%;
         height: auto;
