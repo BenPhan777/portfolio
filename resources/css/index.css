@@ -261,7 +261,7 @@ hr {
 
 #project .thumbnail {
     display: none;
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -325,6 +325,9 @@ h3 {
 
     #project .project_container {
         margin-bottom: 4rem;
+        box-shadow: none;
+        outline: 0.2rem solid white;
+        outline-offset: -0.2rem;
     }
 } 
 
