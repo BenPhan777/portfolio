@@ -325,9 +325,7 @@ h3 {
 
     #project .project_container {
         margin-bottom: 4rem;
-        box-shadow: none;
-        outline: 0.2rem solid white;
-        outline-offset: -0.2rem;
+
     }
 } 
 
