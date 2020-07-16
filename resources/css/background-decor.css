@@ -1,7 +1,6 @@
 /* Introduction section decors */
 /* windmill decor */
 #top-windmill {      
-    content: "";
     position: absolute;
     left: 35rem;
     top: -7.75rem;
