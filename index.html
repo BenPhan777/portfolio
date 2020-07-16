@@ -162,14 +162,27 @@
     </main>
 
     <footer>
-        <div id="contact">
+        <form id="contact">
             <div class="contact_guide">
                 <h2>Contact Me</h2>
-                <p>Ever since I've stepped upon the concept of web development in my second year of uni, I knew immediately that this was the career I wanted to pursue. One of my most notable strengths 
-                    and what I believe to be a useful asset in the work field is my love and willingness to learn. Thanks to that ability, I've picked up quite a few programming 
-                    languages and tec</p>
+                <p>If you'd like to enquire, please feel free to fill in the boxes on the right. I'll usually respond within a day or two.
+                <p>You can also contact me directly on this email address: benphan6320<span style="font-family: Arial, Helvetica, sans-serif;">@</span>gmail.com</p>
+                <p>I look forward to hearing from you!</p>
             </div>
-        </div>
+            <div class="contact_name">
+                <label for="name">Name:</label><br>
+                <input id="name" name="name" require placeholder="Your Name" type="text">
+            </div>
+            <div class="contact_email">
+                <label for="email">Email:</label><br>
+                <input id="email" name="email" require placeholder="Your Email address" type="email">
+            </div>
+            <div class="contact_message">
+                <label for="email">Message:<span> (1000 characters)</span></label><br>
+                <textarea id="message" name="message" require maxlength="1000" placeholder="Your Message" type="email"></textarea><br>
+                <button type="submit" value="submit">Send</button>
+            </div>
+        </form>
     </footer>
 </body>
 </html>
